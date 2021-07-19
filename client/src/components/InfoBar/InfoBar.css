@@ -1,0 +1,34 @@
+.infoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #282828;
+    border-radius: 12px 12px 0 0;
+    height: 120px;
+    width: 100%;
+}
+
+.leftInnerContainer {
+    flex: 1.8;
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    color: green;
+}
+
+.roomid {
+    color: white;
+    height: 40px;
+    font-size: 0.6em;
+}
+
+.rightInnerContainer {
+    display: flex;
+    flex: 1.5;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.onlineIcon {
+    margin-right: 6%;
+}

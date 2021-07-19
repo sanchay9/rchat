@@ -1,0 +1,86 @@
+html, body {
+    font-family: 'Consolas';
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #1d2021;
+    height: 100vh;
+}
+
+.joinInnerContainer {
+    width: 25%;
+}
+
+.joinInput {
+    padding: 15px 20px;
+    font-family: Consolas;
+    font-size: 0.9em;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.welcome {
+    font-family: Consolas;
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 90px;
+}
+
+.heading {
+    color: white;
+    font-family: Consolas;
+    font-size: 3.0em;
+    padding-bottom: 50px;
+    border-bottom: 2px solid white;
+}
+
+.ending {
+    color: white;
+    font-size: 0.7em;
+    padding-top: 80px;
+}
+
+.button {
+    color: white !important;
+    font-family: Consolas;
+    font-size: 1.4em;
+    background: #01b636;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+        height: 100%;
+    }
+
+    .joinInnerContainer {
+        width: 90%;
+    }
+}
+
+button:focus {
+    outline: 0;
+}

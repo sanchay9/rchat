@@ -1,0 +1,31 @@
+.form {
+    display: flex;
+    border-top: 0px solid #D3D3D3;
+}
+
+.input {
+    border: 1;
+    border-radius: 15px 0 0 10px;
+    height: 50px;
+    padding: 5%;
+    width: 70%;
+    font-family: Consolas;
+    font-size: 1.5em;
+    background: #f7f7f7;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.sendButton {
+    color: #fff !important;
+    font-family: Consolas;
+    font-size: 1.8em;
+    text-decoration: none;
+    background: green;
+    display: inline-block;
+    border: none;
+    border-radius: 0 15px 10px 0;
+    width: 30%;
+}
