@@ -14,7 +14,7 @@ const Chat = ({ location }) => {
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const EP = 'https://rchat-applc.herokuapp.com/';
+    const EP = 'https://rchat-sooty.vercel.app';
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search);
@@ -25,7 +25,7 @@ const Chat = ({ location }) => {
         setRoom(room);
 
         socket.emit('join', {name, room}, () => {
-            
+
         });
 
         return () => {

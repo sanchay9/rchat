@@ -11,11 +11,12 @@ const router = require('./router');
 const app = express();
 const server = http.createServer(app);
 
-corsOptions={
-    cors: true,
-    origins:["localhost:3000"],
-}
-const io = socketio(server, corsOptions);
+const io = socketio(server , {
+    cors: {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"]
+    }
+})
 
 io.on('connection', (socket) => {
     socket.on('join', ({name, room}, callback) => {
